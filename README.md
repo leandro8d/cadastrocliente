@@ -34,4 +34,4 @@ crie outra conexão, que pegue a conexão ativa do projeto.
 </pre>
 
 <p><h3>Diagrama do Banco de Dados</h3></p>
-![Image](https://github.com/leandro8d/cadastrocliente/blob/master/bd-diagram.jpg?raw=true)
+https://github.com/leandro8d/cadastrocliente/blob/master/bd-diagram.jpg?raw=true
