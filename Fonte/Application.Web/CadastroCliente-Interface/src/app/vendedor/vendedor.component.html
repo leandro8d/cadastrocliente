@@ -1,0 +1,14 @@
+<div class="example-container">
+  <mat-form-field>
+    <input matInput [(ngModel)]="vendedor.nome" placeholder="Nome">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="number" maxlength="11" placeholder="CPF" (change)="validarCpf(vendedor.cpf)" [(ngModel)]="vendedor.cpf" />
+    
+  </mat-form-field>
+<div><h6 *ngIf="cpfValido.status==='0'" style="color:red">{{cpfValido.data.message}}</h6>  
+</div>
+
+</div>
+<button mat-raised-button color="primary" (click)="adicionarEditar(vendedor)">Salvar</button>

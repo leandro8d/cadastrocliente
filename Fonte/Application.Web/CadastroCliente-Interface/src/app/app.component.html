@@ -1,0 +1,13 @@
+<mat-drawer-container opened class="example-container" autosize>
+  <mat-drawer #drawer opened class="example-sidenav" mode="side">
+    <p routerLink="/cadastrovendedor" routerLinkActive="active">Cadastro de Vendedor</p>
+    <p routerLink="/cadastrocliente" routerLinkActive="active">Cadastro de Cliente</p>
+    
+  </mat-drawer>
+ 
+<div class="example-sidenav-content">
+<mat-card>
+<router-outlet></router-outlet>
+</mat-card>
+</div>
+</mat-drawer-container>

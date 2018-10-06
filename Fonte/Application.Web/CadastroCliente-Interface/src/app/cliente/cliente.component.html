@@ -1,0 +1,26 @@
+<div class="example-container">
+  <mat-form-field>
+    <input matInput [(ngModel)]="cliente.nome" placeholder="Nome">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="number" maxlength="14" placeholder="CNPJ" (change)="validarCnpj(cliente.cnpj)" [(ngModel)]="cliente.cnpj" />
+    
+  </mat-form-field>
+<div><h6 *ngIf="cnpjValido.status==='0'" style="color:red">{{cnpjValido.data.message}}</h6>  
+</div>
+  
+
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="cliente.dataNascimento" placeholder="Data Nascimento">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Vendedor" [(ngModel)]="cliente.idVendedor">
+      <mat-option [value]="vendedor.idVendedor" *ngFor="let vendedor of vendedores">{{vendedor.nome}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<button mat-raised-button [disabled]="cnpjValido.status===0" color="primary" (click)="adicionarEditar(cliente)">Salvar</button>
