@@ -1,37 +1,37 @@
-<h3>Projeto Cadastro de Clientes</h3>
-<p> Projeto desenvolvido em asp.net core 2.0, sql server 2017 e Angular 6. </p>
-<p><h3>Estrutura de Pastas</h3></p>
+<h3> Client Master Project </ h3>
+<p> Project developed in ASP.NET 2.0 core, sql server 2017 and Angular 6. </ p>
+<p> <h3> Folder Structure </ h3> </ p>
 <pre>
-<b>Fonte/Application.Web</b> --Arquivos do front-end em angular 6
-<b>Fonte/Application.WebService</b> --Projeto .net core com os controllers
-<b>Fonte/Domain</b> --Projeto com os arquivos de domínio(Entidades e Dtos)
-<b>Fonte/Repository</b> --Projeto com repositorios de cada entidade e context de conexão.
-<b>Fonte/Repository/ModelMapper</b> --Pasta onde encontra o context de conexão
-<b>Banco</b> --Contem um .bkp do banco e um .sql do banco de dados da aplicação.
-</pre>
-<p><h3>Padrões de Projeto Utilizado</h3></p>
+<b> Source / Application.Web </ b> - Angled front-end files 6
+<b> Source / Application.WebService </ b> - .net core project with controllers
+<b> Source / Domain </ b> --Project with Domain Files (Entities and Dtos)
+<b> Source / Repository </ b> --Project with repositories of each entity and connection context.
+<b> Source / Repository / ModelMapper </ b> --Place where you find the connection context
+<b> Bank </ b> - Contains a .bkp from the database and an .sql from the application database.
+</ pre>
+<p> <h3> Design Patterns Used </ h3> </ p>
 <pre>
-DTO - Utilizado para trafegar somente a informação necessaria para interface.
-Singleton - Criação unica ativa de um objeto, impossibilita ser instanciado mais de 1 vez.
-"DDD" - Estruturação do projeto, com camada de aplicação e repositório.
-</pre>
-<p><h3>Pontos Importantes</h3></p>
+DTO - Used to only traffic information required for interface.
+Singleton - Unique creation of an object, impossible to be instantiated more than 1 time.
+"DDD" - Project structuring, with application layer and repository.
+</ pre>
+<p> <h3> Important Points </ h3> </ p>
 <pre>
-<b>Fonte/Repository/DomainBase.cs</b> --Classe abstrata onde os repositorios deverão obrigatoriamente 
-herdar pois a classe DomainBase.cs contém metodos genericos que são utilizados por todos os
-repositorios, como exemplo as operações de CRUD, sem a necessidade que cada repositório crie
-novamente esses metodos, deixando somente as consultas específicas de cada repositório.
+<b> Source / Repository / DomainBase.cs </ b> - Abstract class where repositories should necessarily
+inherit because the class DomainBase.cs contains generic methods that are used by all
+repositories, such as CRUD operations, without the need for each repository to create
+again, leaving only the specific queries of each repository.
 
-<b>Repositório</b> -- São classes que cada entidade possui, para fazer consultas específicas ao banco de dados.
+<b> Repository </ b> - These are classes that each entity has, to make specific queries to the database.
 
-<b>Entidades</b> --Espelho das entidades do BD, porém com metodos e operações especiais de auxílio e etc.
-Consistência dos dados.
+<b> Entities </ b> - Mirror of DB entities, but with special methods and operations of aid and etc.
+Consistency of the data.
 
-<b>CadastroUsuarioContext.cs</b> --Contexto de conexão com banco de dados, mapeamento das entidades e etc.
-Foi utilizado o conceito de singleton para que qualquer projeto que necessite utilizar o BD, não
-crie outra conexão, que pegue a conexão ativa do projeto.
+<b> CadastroUsuarioContext.cs </ b> --Connection database with database, entities mapping and etc.
+The concept of singleton was used so that any project that needs to use the BD,
+create another connection, which takes the active project connection.
 
-</pre>
+</ pre>
 
-<p><h3>Diagrama do Banco de Dados</h3></p>
+<p> <h3> Database Diagram </ h3> </ p>
 https://github.com/leandro8d/cadastrocliente/blob/master/bd-diagram.jpg?raw=true
