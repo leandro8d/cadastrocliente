@@ -1,14 +1,14 @@
 <h3> Client Master Project </h3>
 <p> Project developed in ASP.NET 2.0 core, sql server 2017 and Angular 6. </p>
-<p> <h3> Folder Structure </h3> </ p>
+<p> <h3> Folder Structure </h3> </p>
 <pre>
-<b> Source / Application.Web </ b> - Angled front-end files 6
-<b> Source / Application.WebService </ b> - .net core project with controllers
-<b> Source / Domain </ b> --Project with Domain Files (Entities and Dtos)
-<b> Source / Repository </ b> --Project with repositories of each entity and connection context.
-<b> Source / Repository / ModelMapper </ b> --Place where you find the connection context
-<b> Bank </ b> - Contains a .bkp from the database and an .sql from the application database.
-</ pre>
+<b> Source / Application.Web </b> - Angled front-end files 6
+<b> Source / Application.WebService </b> - .net core project with controllers
+<b> Source / Domain </b> --Project with Domain Files (Entities and Dtos)
+<b> Source / Repository </b> --Project with repositories of each entity and connection context.
+<b> Source / Repository / ModelMapper </b> --Place where you find the connection context
+<b> Bank </b> - Contains a .bkp from the database and an .sql from the application database.
+</pre>
 <p> <h3> Design Patterns Used </h3> </p>
 <pre>
 DTO - Used to only traffic information required for interface.
