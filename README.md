@@ -1,5 +1,5 @@
 <h3> Client Master Project </h3>
-<p> Project developed in ASP.NET 2.0 core, sql server 2017 and Angular 6. </p>
+<p> Project developed in ASP.NET MVC 2.0 core, sql server 2017 and Angular 6. </p>
 <p> <h3> Folder Structure </h3> </p>
 <pre>
 <b> Source / Application.Web </b> - Angular front-end files 6
